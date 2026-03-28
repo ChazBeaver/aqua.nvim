@@ -1,224 +1,233 @@
 local M = {
   -- ============================================================
   -- TONAL FOUNDATION
-  -- Main brightness ladder for the theme.
+  -- Built from the pirate ship wallpaper:
+  -- abyss black, deep blue-green water, cold cyan glow,
+  -- muted hull wood, and faint treasure/brass warmth.
   -- ============================================================
 
-  bg_0              = "#141917",
-  bg_1              = "#1D2522",
-  bg_2              = "#2B3935",
-  bg_3              = "#3A4A45",
+  bg_0              = "#05080A",
+  bg_1              = "#0A1115",
+  bg_2              = "#112028",
+  bg_3              = "#1A2D36",
 
-  fg_0              = "#D7E0DA",
-  fg_1              = "#C7D2CB",
-  fg_2              = "#8FA099",
-  fg_3              = "#66756F",
+  fg_0              = "#D7E6E8",
+  fg_1              = "#BDD2D8",
+  fg_2              = "#7F9CA4",
+  fg_3              = "#5B747B",
 
   neutral_0         = "#000000",
-  neutral_1         = "#1A1F1D",
-  neutral_2         = "#2A312F",
-  neutral_3         = "#3A4A45",
+  neutral_1         = "#080B0D",
+  neutral_2         = "#1A2328",
+  neutral_3         = "#24343C",
   neutral_9         = "#FFFFFF",
 
   -- ============================================================
   -- SURFACE ROLES
+  -- Keep editor body truly black, but allow panels/subtle UI
+  -- to pick up cold underwater depth.
   -- ============================================================
 
-  surface_main      = "#141917",
-  surface_subtle    = "#1D2522",
-  surface_emphasis  = "#2B3935",
-  surface_panel     = "#101513",
-  surface_panel_alt = "#0E1211",
-  surface_accent    = "#24302C",
-  surface_prompt    = "#202A27",
-  surface_hint      = "#0D1110",
+  surface_main      = "#000000",
+  surface_subtle    = "#081014",
+  surface_emphasis  = "#101A1F",
+  surface_panel     = "#05080A",
+  surface_panel_alt = "#070C0F",
+  surface_accent    = "#122028",
+  surface_prompt    = "#0E171C",
+  surface_hint      = "#05080A",
 
   -- ============================================================
   -- TEXT ROLES
   -- ============================================================
 
-  text_primary      = "#D7E0DA",
-  text_secondary    = "#C7D2CB",
-  text_muted        = "#8FA099",
-  text_dim          = "#66756F",
+  text_primary      = "#D7E6E8",
+  text_secondary    = "#BDD2D8",
+  text_muted        = "#7F9CA4",
+  text_dim          = "#5B747B",
 
   -- ============================================================
-  -- WARM / CORE ACCENTS (theme-shifted for Verdant)
+  -- CORE ACCENTS
+  -- Shifted to match the wallpaper:
+  -- teal water glow, blue abyss, brass wreck highlights,
+  -- coral/rust accents from the seabed and wood.
   -- ============================================================
 
-  accent_red_deep     = "#4E2F36",
-  accent_rose         = "#7C4D57",
-  accent_rust         = "#3F6B57",
-  accent_ember        = "#5E8F88",
+  accent_red_deep     = "#5C3A37",
+  accent_rose         = "#8D6462",
+  accent_rust         = "#8A5F46",
+  accent_ember        = "#B7865B",
 
-  accent_orange       = "#5E8F88",
-  accent_orange_soft  = "#7FAFAE",
+  accent_orange       = "#C79362",
+  accent_orange_soft  = "#D0A37A",
 
-  accent_gold         = "#7FAFAE",
-  accent_amber        = "#6E9B97",
-  accent_yellow       = "#A9C77B",
-  accent_yellow_soft  = "#C6D7A8",
+  accent_gold         = "#D4B06A",
+  accent_amber        = "#BFA36A",
+  accent_yellow       = "#D7C47C",
+  accent_yellow_soft  = "#E2D7A6",
 
-  accent_olive        = "#7A8F6D",
-  accent_olive_deep   = "#586950",
-  accent_yellow_green = "#A9C77B",
+  accent_olive        = "#6C7A62",
+  accent_olive_deep   = "#4B5747",
+  accent_yellow_green = "#95A86D",
 
-  accent_green        = "#5F8F7A",
-  accent_green_deep   = "#2F5B49",
-  accent_moss         = "#3F6B57",
+  accent_green        = "#3F7B78",
+  accent_green_deep   = "#244E50",
+  accent_moss         = "#2D6361",
 
-  accent_purple       = "#6F7F99",
-  accent_violet       = "#7B6A96",
-  accent_violet_soft  = "#78A9C0",
-  accent_plum         = "#5B536D",
+  accent_purple       = "#5F7394",
+  accent_violet       = "#726A9A",
+  accent_violet_soft  = "#6C98B0",
+  accent_plum         = "#5B556F",
 
-  accent_magenta      = "#8F7FB5",
-  accent_rose_dust    = "#8A7C86",
+  accent_magenta      = "#8A6E93",
+  accent_rose_dust    = "#9B8075",
 
   -- ============================================================
   -- CONTROLLED / MUTED COOL ACCENTS
+  -- These come from the glowing water and mist.
   -- ============================================================
 
-  accent_aqua         = "#6FC7C4",
-  accent_teal         = "#5FA3A1",
-  accent_cyan         = "#7FAFAE",
-  accent_cyan_soft    = "#9BC5C4",
+  accent_aqua         = "#6BC7C8",
+  accent_teal         = "#4DA3A8",
+  accent_cyan         = "#72B9C0",
+  accent_cyan_soft    = "#98D5D9",
 
-  accent_blue         = "#4C7A94",
-  accent_blue_soft    = "#6A90A6",
-  accent_slate_blue   = "#5B7282",
+  accent_blue         = "#4C7294",
+  accent_blue_soft    = "#6C92AA",
+  accent_slate_blue   = "#53697A",
 
-  accent_cyan_hot     = "#87D9D4",
-  accent_blue_hot     = "#78A9C0",
-  accent_blue_neon    = "#66B9D4",
+  accent_cyan_hot     = "#86E0DE",
+  accent_blue_hot     = "#7BBAD4",
+  accent_blue_neon    = "#5FD3E0",
 
-  accent_sky          = "#8EB6C2",
-  accent_lavender     = "#A394C2",
+  accent_sky          = "#8CBFCC",
+  accent_lavender     = "#A59BC6",
 
-  accent_pink         = "#B08396",
-  accent_pink_hot     = "#C06A92",
+  accent_pink         = "#B08C90",
+  accent_pink_hot     = "#CC8A98",
 
   -- ============================================================
-  -- SOFT SUPPORT ACCENTS
+  -- SUPPORT ACCENTS
   -- ============================================================
 
-  support_green       = "#8FBFA7",
-  support_red         = "#8A7C86",
-  support_success     = "#5F8F7A",
-  support_ok          = "#A9D3B9",
+  support_green       = "#7BB7AC",
+  support_red         = "#A06A63",
+  support_success     = "#4F9C90",
+  support_ok          = "#9ED7C8",
 
   -- ============================================================
   -- SEMANTIC UI ROLES
   -- ============================================================
 
-  ui_border           = "#D7E0DA",
-  ui_selection        = "#2B3935",
-  ui_selection_subtle = "#1D2522",
-  ui_search_bg        = "#7A8F6D",
-  ui_search_fg        = "#141917",
-  ui_incsearch_bg     = "#7FAFAE",
-  ui_incsearch_fg     = "#141917",
-  ui_cursor_bg        = "#D7E0DA",
-  ui_cursor_fg        = "#141917",
+  ui_border           = "#29414A",
+  ui_selection        = "#16303A",
+  ui_selection_subtle = "#0E1D24",
+  ui_search_bg        = "#2C6F7A",
+  ui_search_fg        = "#EAF7F8",
+  ui_incsearch_bg     = "#D4B06A",
+  ui_incsearch_fg     = "#081014",
+  ui_cursor_bg        = "#D7E6E8",
+  ui_cursor_fg        = "#05080A",
 
   -- ============================================================
   -- DIAGNOSTIC SEMANTICS
   -- ============================================================
 
-  diag_error          = "#7C4D57",
-  diag_warn           = "#A9C77B",
-  diag_info           = "#4C7A94",
-  diag_hint           = "#7FAFAE",
+  diag_error          = "#A06A63",
+  diag_warn           = "#D4B06A",
+  diag_info           = "#72B9C0",
+  diag_hint           = "#6BC7C8",
 
   -- ============================================================
   -- DIFF / GIT SEMANTICS
   -- ============================================================
 
-  diff_add            = "#5F8F7A",
-  diff_delete         = "#7C4D57",
-  diff_change         = "#7FAFAE",
-  diff_text           = "#D7E0DA",
+  diff_add            = "#4F9C90",
+  diff_delete         = "#A06A63",
+  diff_change         = "#72B9C0",
+  diff_text           = "#D7E6E8",
 
   -- ============================================================
   -- RARE / SPECIAL PURPOSE COLORS
   -- ============================================================
 
-  special_statement   = "#6FC7C4",
-  special_rainbow_1   = "#F1F5EF",
-  special_yellow      = "#D8E96A",
-  special_green       = "#4FA36F",
-  special_red         = "#B85C6B",
+  special_statement   = "#6BC7C8",
+  special_rainbow_1   = "#F2F7F8",
+  special_yellow      = "#E6D48C",
+  special_green       = "#54A98E",
+  special_red         = "#C06C65",
 
   -- ============================================================
   -- COMPATIBILITY ALIASES
+  -- Keep these aligned with the role-based palette above.
   -- ============================================================
 
-  bg                  = "#141917",
-  bg_alt              = "#1D2522",
-  bg_alt2             = "#2B3935",
-  bg_panel            = "#101513",
-  bg_panel_alt        = "#0E1211",
-  bg_accent           = "#24302C",
-  bg_prompt_title     = "#202A27",
-  bg_hint             = "#0D1110",
+  bg                  = "#000000",
+  bg_alt              = "#081014",
+  bg_alt2             = "#101A1F",
+  bg_panel            = "#05080A",
+  bg_panel_alt        = "#070C0F",
+  bg_accent           = "#122028",
+  bg_prompt_title     = "#0E171C",
+  bg_hint             = "#05080A",
 
-  fg                  = "#D7E0DA",
-  fg_alt              = "#C7D2CB",
-  fg_muted            = "#8FA099",
-  comment             = "#66756F",
-  grey                = "#1A1F1D",
-  grey_alt            = "#2A312F",
-  grey_bright         = "#3A4A45",
+  fg                  = "#D7E6E8",
+  fg_alt              = "#BDD2D8",
+  fg_muted            = "#7F9CA4",
+  comment             = "#5B747B",
+  grey                = "#11181D",
+  grey_alt            = "#1A2328",
+  grey_bright         = "#24343C",
   black               = "#000000",
   white               = "#FFFFFF",
 
-  red                 = "#3F6B57",
-  red_dark            = "#4E2F36",
-  rose                = "#7C4D57",
-  green               = "#5F8F7A",
-  green_strong        = "#2F5B49",
-  yellow              = "#7FAFAE",
-  yellow_bright       = "#A9C77B",
-  yellow_soft         = "#C6D7A8",
-  gold                = "#7FAFAE",
-  olive               = "#7A8F6D",
-  purple              = "#6F7F99",
-  purple_alt          = "#8F7FB5",
-  violet              = "#7B6A96",
-  blue                = "#4C7A94",
+  red                 = "#8A5F46",
+  red_dark            = "#5C3A37",
+  rose                = "#8D6462",
+  green               = "#3F7B78",
+  green_strong        = "#244E50",
+  yellow              = "#D4B06A",
+  yellow_bright       = "#D7C47C",
+  yellow_soft         = "#E2D7A6",
+  gold                = "#D4B06A",
+  olive               = "#6C7A62",
+  purple              = "#5F7394",
+  purple_alt          = "#8A6E93",
+  violet              = "#726A9A",
+  blue                = "#4C7294",
 
-  cyan                = "#7FAFAE",
-  cyan_alt            = "#5FA3A1",
-  cyan_bright         = "#6FC7C4",
-  blue_bright         = "#78A9C0",
-  blue_neon           = "#66B9D4",
-  pink                = "#B08396",
-  pink_bright         = "#C06A92",
-  lavender            = "#A394C2",
-  sky                 = "#8EB6C2",
+  cyan                = "#72B9C0",
+  cyan_alt            = "#4DA3A8",
+  cyan_bright         = "#6BC7C8",
+  blue_bright         = "#7BBAD4",
+  blue_neon           = "#5FD3E0",
+  pink                = "#B08C90",
+  pink_bright         = "#CC8A98",
+  lavender            = "#A59BC6",
+  sky                 = "#8CBFCC",
 
-  green_soft          = "#8FBFA7",
-  red_soft            = "#8A7C86",
-  success             = "#5F8F7A",
-  ok                  = "#A9D3B9",
+  green_soft          = "#7BB7AC",
+  red_soft            = "#A06A63",
+  success             = "#4F9C90",
+  ok                  = "#9ED7C8",
 
-  search_bg           = "#7A8F6D",
-  search_fg           = "#141917",
-  incsearch_bg        = "#7FAFAE",
-  incsearch_fg        = "#141917",
+  search_bg           = "#2C6F7A",
+  search_fg           = "#EAF7F8",
+  incsearch_bg        = "#D4B06A",
+  incsearch_fg        = "#081014",
 
-  cursor_bg           = "#D7E0DA",
-  cursor_fg           = "#141917",
+  cursor_bg           = "#D7E6E8",
+  cursor_fg           = "#05080A",
 
-  border              = "#D7E0DA",
-  selection           = "#2B3935",
-  selection_alt       = "#1D2522",
+  border              = "#29414A",
+  selection           = "#16303A",
+  selection_alt       = "#0E1D24",
 
-  statement_red       = "#6FC7C4",
-  rainbow_1           = "#F1F5EF",
-  pure_yellow         = "#D8E96A",
-  pure_green          = "#4FA36F",
-  pure_red            = "#B85C6B",
+  statement_red       = "#6BC7C8",
+  rainbow_1           = "#F2F7F8",
+  pure_yellow         = "#E6D48C",
+  pure_green          = "#54A98E",
+  pure_red            = "#C06C65",
 }
 
 return M
